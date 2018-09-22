@@ -47,7 +47,7 @@ $headers = Array(
       print '<h1>Result generated</h1>
       <h3>DOWN: ' . $_POST['down'] . 'mbps, UP: ' . $_POST['up'] . 'mbps, PING: ' . $ping . '</h3>
       <a href="http://beta.speedtest.net/my-result/'.urldecode($param[1]) . '" target="_BLANK">' . 'http://beta.speedtest.net/my-result/'.urldecode($param[1]) . '</a> (Opens in new tab) <br>
-      A script by <a href="https://amresh.ml">Amresh</a><br>
+      A script by <a href="https://post4vps.com/user-1044.html">Amresh</a><br>
       <a href="" onclick="window.location.reload()">Click here to try another one!</a>
       ';
       }
