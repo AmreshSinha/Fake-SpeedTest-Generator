@@ -17,3 +17,6 @@ If you Use it on a remotw server then your location in the speedtest image will 
 
 # What Else?
 Nothing, Just keep Spoofing others! ;)
+
+# Example
+![alt text](https://www.speedtest.net/result/7656618580.png)
