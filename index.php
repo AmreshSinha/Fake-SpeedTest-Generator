@@ -2,7 +2,7 @@
 <head><title>Fake SpeedTest Gen-Amresh</title>
 </head>
 <body>
-<?php
+<center><?php
 if(!isset($_POST['sub'])){
   echo '
   <h1>Generate real Ookla Speedtest results.</h1>
@@ -53,7 +53,9 @@ $headers = Array(
       }
     }
 ?>
-
+	</center>
+	
+	
 <br><br>
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5bn2va120zp&amp;m=7&amp;s=320&amp;c=e63100" async="async"></script>
 
