@@ -10,7 +10,7 @@ Like spoofing others by showing your fake SpeedTest result then, use this script
 Just Go to your Site where you have uploaded the script and use to make spoof results!
 
 # Note
-If you Use it on a remotw server then your location in the speedtest image will be of that server only!
+If you Use it on a remote server then your location in the speedtest image will be of that server only!
 >Ques.>How Can You Make a SpeedTest Result with your real location?
 
 >Ans.> Just Simply use XAMPP or WAMP on your personal pc and use script on your personal pc and then you will get your real location and ISP in the speedtest image!
