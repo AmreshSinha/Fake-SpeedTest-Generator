@@ -1,5 +1,5 @@
 # Fake-SpeedTest-Generator
-Like spoofing others by showing your fake SpeedTest result then, use this script for generating one. Site: https://amresh.ml/fakespeed/
+Like spoofing others by showing your fake SpeedTest result then, use this script for generating one. Site: https://amresh.ml/
 
 # How It Works
 >The user Inputs the Value of Down Speed, UP Speed and Ping and Submits it
