@@ -58,7 +58,7 @@ if(!isset($_POST['sub'])){
 $down = $_POST['down'] * 1000;  
 $up = $_POST['up'] * 1000; 
 $ping = $_POST['ping'];
-$server = '3729';
+$server = '15028';// Change Server code according to your location from here https://c.speedtest.net/speedtest-servers-static.php
 $accuracy = 8;
 $hash = md5("$ping-$up-$down-297aae72");
 $headers = Array(
