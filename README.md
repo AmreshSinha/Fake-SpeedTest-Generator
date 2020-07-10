@@ -1,5 +1,5 @@
 # Fake-SpeedTest-Generator
-Like spoofing others by showing your fake SpeedTest result then, use this script for generating one. Site: [fakespeedtest.000webhostapp.com]
+Like spoofing others by showing your fake SpeedTest result then, use this script for generating one. Site: https://fakespeedtest.000webhostapp.com/
 
 # How It Works
 >The user Inputs the Value of Down Speed, UP Speed and Ping and Submits it
