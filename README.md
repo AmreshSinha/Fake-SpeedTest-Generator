@@ -1,3 +1,5 @@
+![Image](https://raw.githubusercontent.com/AmreshSinha/Fake-SpeedTest-Generator/master/Story%20of%20the%20fakespeed%20script.gif)
+
 # Fake-SpeedTest-Generator
 Like spoofing others by showing your fake SpeedTest result then, use this script for generating one. Site: https://fakespeedtest.000webhostapp.com/
 
