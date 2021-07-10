@@ -20,7 +20,7 @@ The details gets transferred to Speedtest.net database with the inputed Value
 
 After processing the user retrieves a real speedtest.net result but with fake values!
 
-```In short exploits Ookla Apis.```
+```In short exploits Ookla Speedtest APIs```
 
 # Note
 If you Use it on a remote server then your location in the speedtest image will be of that server only!
