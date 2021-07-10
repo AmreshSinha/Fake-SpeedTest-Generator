@@ -14,11 +14,13 @@ PHP 5.4+
 Working Site: https://fakespeedtest.000webhostapp.com/
 
 # How It Works
->The user Inputs the Value of Down Speed, UP Speed and Ping and Submits it
->The details gets transferred to Speedtest.net database with the inputed Value
->After processing the user retrieves a real speedtest.net result but with fake values!
+The user Inputs the Value of Down Speed, UP Speed and Ping and Submits it
 
->> In short exploits Ookla Apis.
+The details gets transferred to Speedtest.net database with the inputed Value
+
+After processing the user retrieves a real speedtest.net result but with fake values!
+
+```In short exploits Ookla Apis.```
 
 # Note
 If you Use it on a remote server then your location in the speedtest image will be of that server only!
