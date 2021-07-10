@@ -6,8 +6,8 @@
 Working on UI!
 
 # Dependencies
-cURL for PHP
-PHP 5.4+
+>cURL for PHP
+>PHP 5.4+
 
 # Site
 Working Site: https://fakespeedtest.000webhostapp.com/
