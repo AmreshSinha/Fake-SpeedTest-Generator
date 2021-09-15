@@ -16,7 +16,7 @@ After processing the user retrieves a real speedtest.net result but with fake va
 ```In short exploits Ookla Speedtest APIs```
 
 # Note
-If you Use it on a remote server then your location in the speedtest image will be of that server only!
+If you Use it on a remote server then your location in the speedtest result will be of that server only!
 
 Run Locally on WAMP or XAMP server to get your location in the result.
 
