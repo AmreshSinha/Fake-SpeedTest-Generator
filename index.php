@@ -3,55 +3,80 @@
 <head><title>Fake SpeedTest Gen-Amresh</title>
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+  
+  #menu-toggle:checked + #menu {
+        display: block;
+      }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-.active {
-    background-color: #4CAF50;
-}
 </style>
 </head>
-<body>
+<body class="antialiased bg-gray-700">
 
-<ul>
-  <li><a class="active" href="" onclick="window.location.reload()">Home</a></li>
-  <li><a target=_blank href="https://post4vps.com">Post4VPS</a></li>
-  <li><a target=_blank href="https://post4vps.com/user-1044.html">Contact</a></li>
-  <li><a target=_blank href="https://github.com/AmreshSinha/Fake-SpeedTest-Generator">About</a></li>
-</ul>
+<header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 bg-gray-900">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="" class="text-yellow-300 font-bold"><i class="fas fa-bolt"></i> Fake Speedtest Generator</a>
+  </div>
+
+   <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-100" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+  <input class="hidden" type="checkbox" id="menu-toggle" />
+
+  <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <nav>
+      <ul class="lg:flex items-center justify-between text-base text-yellow-300 pt-4 lg:pt-0">
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-500" href="#" onClick="window.location.reload();">Home</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-500" href="https://github.com/AmreshSinha/Fake-SpeedTest-Generator" target="_blank">Github</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-500 lg:mb-0 mb-2" href="https://github.com/AmreshSinha" target="_blank">About</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+      
+    </a>
+
+  </div>
+
+  </header>
+
 
 
 <?php
 if(!isset($_POST['sub'])){
   echo '
-  <h1>Generate real Ookla Speedtest results.</h1>
-  <form action="" method="POST">
-  <input type="number" placeholder="Download speed in mbps" name="down" step="0.01" style="width: 175px;"></input> mbps<br>
-  <input type="number" placeholder="Upload speed in mbps" name="up" step="0.01" style="width: 175px;"></input> mbps<br>
-  <input type="number" placeholder="Ping in ms" name="ping" style="width: 175px;"></input> ms<br>
-  <button type="submit" value="Submit" name="sub" style="width: 175px;">Submit</button>
+  <div class="max-w-3xl bg-gray-900 rounded-lg mx-auto my-16 p-16">
+    <h1 class="text-3xl font-medium text-yellow-500 mb-5">Generate real Ookla Speedtest results.</h1>
+    <div class="grid grid-cols-2 gap-4 md:grid-flow-col">
+      <div>
+        <form action="" method="POST">
+        <input type="number" placeholder="Download speed in mbps" name="down" step="0.01" style="width: 225px;" class="text-sm text-gray-base w-full 
+        mr-3 py-5 px-4 h-2 border 
+        border-gray-200 rounded mb-2"></input> <span class="text-yellow-500">mbps</span><br>
+        <input type="number" placeholder="Upload speed in mbps" name="up" step="0.01" style="width: 225px;" class="text-sm text-gray-base w-full mr-3 
+        py-5 px-4 h-2 border border-gray-200 
+        rounded mb-2"></input> <span class="text-yellow-500">mbps</span><br>
+        <input type="number" placeholder="Ping in ms" name="ping" style="width: 225px;" class="text-sm text-gray-base w-full mr-3 
+        py-5 px-4 h-2 border border-gray-200 
+        rounded mb-2"></input> <span class="text-yellow-500">ms</span><br>
+        <button type="submit" value="Submit" name="sub" style="width: 225px;" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+        </form>
+      </div>
+      <div>
+        <img src="http://speedtest.net/my-result/12039063870.png" alt="Image" />
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-white bg-gray-900 fixed inset-x-0 bottom-0">
+    <div class="flex justify-center">
+    <p class="p-4 text-yellow-300">Maintained with ❤️ by <a href="https://github.com/AmreshSinha" class="hover:underline" target="_blank">Amresh</a></p>
+    </div>
+  </footer>
   ';
   die();
 }
@@ -85,15 +110,32 @@ $headers = Array(
     foreach (explode('&', $data) as $chunk) {
       $param = explode("=", $chunk);
       if (urldecode($param[0])== "resultid"){
-      print '<h1>Result generated</h1>
-      <h3>DOWN: ' . $_POST['down'] . 'mbps, UP: ' . $_POST['up'] . 'mbps, PING: ' . $ping . '</h3>
-      <a href="http://beta.speedtest.net/my-result/'.urldecode($param[1]) . '" target="_BLANK">' . 'http://beta.speedtest.net/my-result/'.urldecode($param[1]) . '</a> (Opens in new tab) <br>
-      <a href="http://beta.speedtest.net/my-result/'.urldecode($param[1]) . '.png" target="_BLANK">' . 'http://beta.speedtest.net/my-result/'.urldecode($param[1]) . '.png</a> (Image Opens in new tab) <br>
-      
-      <img src="http://beta.speedtest.net/my-result/'.urldecode($param[1]) . '.png"><br><br>
-      
-      A script by <a href="https://github.com/jtay" target=_blank>Jaydon Taylor</a> and Modified and Customised by <a href="https://post4vps.com/user-1044.html">Amresh</a><br>
-      <a href="" onclick="window.location.reload()">Click here to try another one!</a>
+      print '
+
+      <div class="max-w-3xl bg-gray-900 rounded-lg mx-auto my-16 p-16">
+        <h1 class="text-3xl font-medium text-yellow-500 mb-5">Here You Go!</h1>
+        <div class="grid grid-rows-2">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-yellow-500 flex flex-col gap-y-4">
+              <div>
+                <h3>DOWN: ' . $_POST['down'] . ' MbPS, UP: ' . $_POST['up'] . ' MbPS, PING: ' . $ping . ' ms</h3>
+              </div>
+              <div>
+                <a href="http://speedtest.net/my-result/'.urldecode($param[1]) . '" target="_BLANK" class="hover:underline">' . 'http://speedtest.net/my-result/'.urldecode($param[1]) . '</a><br>
+              </div>
+              <div>
+                <a href="http://speedtest.net/my-result/'.urldecode($param[1]) . '.png" target="_BLANK" class="hover:underline">' . 'http://speedtest.net/my-result/'.urldecode($param[1]) . '.png</a><br>
+              </div>
+            </div>
+            <div>
+              <img src="http://speedtest.net/my-result/'.urldecode($param[1]) . '.png">
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5bn2va120zp&amp;m=7&amp;s=320&amp;c=e63100" async="async"></script>
+          </div>
+        </div>
+      </div>
       ';
       }
     }
@@ -102,123 +144,13 @@ $headers = Array(
 	
 	
 <br><br>
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5bn2va120zp&amp;m=7&amp;s=320&amp;c=e63100" async="async"></script>
+<!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5bn2va120zp&amp;m=7&amp;s=320&amp;c=e63100" async="async"></script> -->
 
-
-	
-
-
-
-<script>
-// Set the number of snowflakes (more than 30 - 40 not recommended)
-var snowmax=35
-
-// Set the colors for the snow. Add as many colors as you like
-var snowcolor=new Array("#aaaacc","#ddddFF","#ccccDD")
-
-// Set the fonts, that create the snowflakes. Add as many fonts as you like
-var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
-
-// Set the letter that creates your snowflake (recommended:*)
-var snowletter="*"
-
-// Set the speed of sinking (recommended values range from 0.3 to 2)
-var sinkspeed=0.6
-
-// Set the maximal-size of your snowflaxes
-var snowmaxsize=22
-
-// Set the minimal-size of your snowflaxes
-var snowminsize=8
-
-// Set the snowing-zone
-// Set 1 for all-over-snowing, set 2 for left-side-snowing 
-// Set 3 for center-snowing, set 4 for right-side-snowing
-var snowingzone=3
-
-///////////////////////////////////////////////////////////////////////////
-// CONFIGURATION ENDS HERE
-///////////////////////////////////////////////////////////////////////////
-
-
-// Do not edit below this line
-var snow=new Array()
-var marginbottom
-var marginright
-var timer
-var i_snow=0
-var x_mv=new Array();
-var crds=new Array();
-var lftrght=new Array();
-var browserinfos=navigator.userAgent 
-var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
-var ns6=document.getElementById&&!document.all
-var opera=browserinfos.match(/Opera/)  
-var browserok=ie5||ns6||opera
-
-function randommaker(range) {		
-	rand=Math.floor(range*Math.random())
-    return rand
-}
-
-function initsnow() {
-	if (ie5 || opera) {
-		marginbottom = document.body.clientHeight
-		marginright = document.body.clientWidth
-	}
-	else if (ns6) {
-		marginbottom = window.innerHeight
-		marginright = window.innerWidth
-	}
-	var snowsizerange=snowmaxsize-snowminsize
-	for (i=0;i<=snowmax;i++) {
-		crds[i] = 0;                      
-    	lftrght[i] = Math.random()*15;         
-    	x_mv[i] = 0.03 + Math.random()/10;
-		snow[i]=document.getElementById("s"+i)
-		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
-		snow[i].size=randommaker(snowsizerange)+snowminsize
-		snow[i].style.fontSize=snow[i].size
-		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
-		snow[i].sink=sinkspeed*snow[i].size/5
-		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
-		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
-		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
-		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
-		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
-		snow[i].style.left=snow[i].posx
-		snow[i].style.top=snow[i].posy
-	}
-	movesnow()
-}
-
-function movesnow() {
-	for (i=0;i<=snowmax;i++) {
-		crds[i] += x_mv[i];
-		snow[i].posy+=snow[i].sink
-		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
-		snow[i].style.top=snow[i].posy
-		
-		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
-			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
-			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
-			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
-			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
-			snow[i].posy=0
-		}
-	}
-	var timer=setTimeout("movesnow()",50)
-}
-
-for (i=0;i<=snowmax;i++) {
-	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
-}
-if (browserok) {
-	window.onload=initsnow
-}
-</script>
-
-
+<footer class="bg-white bg-gray-900 fixed inset-x-0 bottom-0">
+    <div class="flex justify-center">
+    <p class="p-4 text-yellow-300">Maintained with ❤️ by <a href="https://github.com/AmreshSinha" class="hover:underline" target="_blank">Amresh</a></p>
+    </div>
+</footer>
 </body>
 
 
