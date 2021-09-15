@@ -128,7 +128,7 @@ $headers = Array(
               </div>
             </div>
             <div>
-              <img src="http://speedtest.net/my-result/'.urldecode($param[1]) . '.png">
+              <a href="http://speedtest.net/my-result/'.urldecode($param[1]) . '" target="_BLANK" class="hover:underline"><img src="http://speedtest.net/my-result/'.urldecode($param[1]) . '.png"></a>
             </div>
           </div>
           <div class="flex justify-center">
