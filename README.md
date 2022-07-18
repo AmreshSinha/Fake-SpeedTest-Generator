@@ -1,6 +1,6 @@
 <details>
         <summary>Disclaimer!</summary>
-  This Project is solely for <b>Education Purpose Only</b>! The previous owner, current maintainer or the future maintainer will not be responsible for any action done by the end user!
+  This Project and the working demo link (mentioned in this repo) is solely for <b>Education Purpose Only</b>! The previous owner, current maintainer or the future maintainer will not be responsible for any action done by the end user!
 </details>   
 
 # Dependencies
