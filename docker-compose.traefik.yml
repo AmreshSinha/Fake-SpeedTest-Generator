@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  fake-speedtest:
+    build: .
+    restart: always
+    network:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.ghost-secure.entrypoints=websecure"
+      # Rename yourdomain.tld to the subdomain or domain as per your requirement
+      - "traefik.http.routers.ghost-secure.rule=Host(`yourdomain.tld`)"
