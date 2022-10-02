@@ -9,7 +9,7 @@ cURL for PHP
 PHP 5.4+
 
 # Site
-Working Site: https://fakespeedtest.000webhostapp.com/
+Working Site: https://fakespeedtest.x-axis.me/
 
 # How It Works
 The user Inputs the Value of Down Speed, UP Speed and Ping and Submits it
